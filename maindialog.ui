@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainDialog</class>
+ <widget class="QDialog" name="MainDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>956</width>
+    <height>875</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Main</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_4">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QPushButton" name="open">
+       <property name="text">
+        <string>Open</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="newList">
+       <property name="text">
+        <string>New</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="compile">
+       <property name="text">
+        <string>Compile</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QGroupBox" name="groupBoxList">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="title">
+        <string>Softwares</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <widget class="QListWidget" name="liste">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>300</width>
+            <height>16777215</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_2">
+          <property name="text">
+           <string>Add</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton">
+          <property name="text">
+           <string>Remove</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="mainLayout">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="title">
+        <string>Software</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <layout class="QFormLayout" name="formLayout">
+          <item row="4" column="0">
+           <widget class="QLabel" name="label_5">
+            <property name="text">
+             <string>app_name</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QLineEdit" name="app_name">
+            <property name="minimumSize">
+             <size>
+              <width>508</width>
+              <height>0</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="label_4">
+            <property name="text">
+             <string>URL</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QLineEdit" name="url">
+            <property name="minimumSize">
+             <size>
+              <width>508</width>
+              <height>0</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_3">
+            <property name="text">
+             <string>size</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="size">
+            <property name="minimumSize">
+             <size>
+              <width>508</width>
+              <height>0</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>version</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="version">
+            <property name="minimumSize">
+             <size>
+              <width>508</width>
+              <height>0</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>name</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="name">
+            <property name="minimumSize">
+             <size>
+              <width>508</width>
+              <height>0</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="0">
+           <widget class="QLabel" name="label_6">
+            <property name="text">
+             <string>category</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1">
+           <widget class="QComboBox" name="cat">
+            <property name="minimumSize">
+             <size>
+              <width>512</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="editable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="0">
+           <widget class="QLabel" name="label_7">
+            <property name="text">
+             <string>Icon URL</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="1">
+           <widget class="QLineEdit" name="iconurl">
+            <property name="minimumSize">
+             <size>
+              <width>508</width>
+              <height>0</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="0">
+           <widget class="QLabel" name="label_8">
+            <property name="text">
+             <string>Icon</string>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="1">
+           <widget class="RemotePixmapLabel" name="icon">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_2">
+          <property name="title">
+           <string>Actions</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <widget class="QCheckBox" name="unzip">
+             <property name="text">
+              <string>unzip</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="untar">
+             <property name="text">
+              <string>untar</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="run">
+             <property name="text">
+              <string>run</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="mount">
+             <property name="text">
+              <string>mount</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="move">
+             <property name="text">
+              <string>move to /Applications</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_3">
+          <property name="title">
+           <string>Description</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <widget class="QPlainTextEdit" name="desc"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>RemotePixmapLabel</class>
+   <extends>QLabel</extends>
+   <header location="global">remotepixmaplabel.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>open</tabstop>
+  <tabstop>newList</tabstop>
+  <tabstop>compile</tabstop>
+  <tabstop>liste</tabstop>
+  <tabstop>name</tabstop>
+  <tabstop>version</tabstop>
+  <tabstop>size</tabstop>
+  <tabstop>url</tabstop>
+  <tabstop>app_name</tabstop>
+  <tabstop>cat</tabstop>
+  <tabstop>iconurl</tabstop>
+  <tabstop>unzip</tabstop>
+  <tabstop>untar</tabstop>
+  <tabstop>run</tabstop>
+  <tabstop>mount</tabstop>
+  <tabstop>move</tabstop>
+  <tabstop>desc</tabstop>
+  <tabstop>pushButton_2</tabstop>
+  <tabstop>pushButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>open</sender>
+   <signal>clicked()</signal>
+   <receiver>MainDialog</receiver>
+   <slot>openList()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>123</x>
+     <y>25</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>133</x>
+     <y>47</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>iconurl</sender>
+   <signal>editingFinished()</signal>
+   <receiver>MainDialog</receiver>
+   <slot>retrieveIcon()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>880</x>
+     <y>295</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>936</x>
+     <y>290</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>newList</sender>
+   <signal>clicked()</signal>
+   <receiver>MainDialog</receiver>
+   <slot>newList()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>619</x>
+     <y>43</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>717</x>
+     <y>78</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>name</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>MainDialog</receiver>
+   <slot>nameChanged(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>880</x>
+     <y>108</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>936</x>
+     <y>82</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>MainDialog</receiver>
+   <slot>addItem()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>289</x>
+     <y>820</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>497</x>
+     <y>697</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainDialog</receiver>
+   <slot>removeItem()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>289</x>
+     <y>854</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>497</x>
+     <y>741</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>version</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>MainDialog</receiver>
+   <slot>versionChanged(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>649</x>
+     <y>131</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>952</x>
+     <y>124</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>size</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>MainDialog</receiver>
+   <slot>sizeChanged(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>849</x>
+     <y>159</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>951</x>
+     <y>169</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>url</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>MainDialog</receiver>
+   <slot>urlChanged(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>809</x>
+     <y>191</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>952</x>
+     <y>218</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>app_name</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>MainDialog</receiver>
+   <slot>appNameChanged(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>709</x>
+     <y>216</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>950</x>
+     <y>246</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>openList()</slot>
+  <slot>listItemChanged(int)</slot>
+  <slot>retrieveIcon()</slot>
+  <slot>newList()</slot>
+  <slot>nameChanged(QString)</slot>
+  <slot>addItem()</slot>
+  <slot>removeItem()</slot>
+  <slot>versionChanged(QString)</slot>
+  <slot>sizeChanged(QString)</slot>
+  <slot>urlChanged(QString)</slot>
+  <slot>appNameChanged(QString)</slot>
+ </slots>
+</ui>
